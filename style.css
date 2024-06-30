@@ -80,6 +80,10 @@ p {
   backface-visibility: hidden;
 }
 
+.actions .return {
+  background-color: #e74c3c;
+}
+
 .card .front {
   transform: rotateY(180deg);
 }

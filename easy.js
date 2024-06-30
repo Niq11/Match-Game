@@ -9,7 +9,7 @@ document.querySelector(".score").textContent = score;
 fetch("data/cardeasy.json")
   .then((res) => res.json())
   .then((data) => {
-    cards = [...data.slice(0, 4), ...data.slice(0, 4)]; // Use only the first 4 unique cards, duplicated
+    cards = [...data, ...data];
     shuffleCards();
     generateCards();
   });

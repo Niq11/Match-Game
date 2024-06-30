@@ -30,9 +30,5 @@
     {
         "image": "asset/watermelon.png",
         "name": "watermelon"
-    },
-    {
-        "image": "asset/cherries.png",
-        "name": "cherries"
     }
 ]

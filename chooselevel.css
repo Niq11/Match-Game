@@ -25,7 +25,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Add space between buttons */
+  gap: 20px;
 }
 
 .actions button {
@@ -38,5 +38,5 @@ p {
 }
 
 .actions .return {
-  background-color: #e74c3c; /* Different color for the return button */
+  background-color: #e74c3c;
 }

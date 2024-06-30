@@ -6,7 +6,7 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
-fetch("data/cards.json")
+fetch("data/cardeasy.json")
   .then((res) => res.json())
   .then((data) => {
     cards = [...data.slice(0, 4), ...data.slice(0, 4)]; // Use only the first 4 unique cards, duplicated

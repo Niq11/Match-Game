@@ -1,0 +1,18 @@
+[
+    {
+        "image": "asset/chili.png",
+        "name": "chili"
+    },
+    {
+        "image": "asset/grapes.png",
+        "name": "grapes"
+    },
+    {
+        "image": "asset/lemon.png",
+        "name": "lemon"
+    },
+    {
+        "image": "asset/orange.png",
+        "name": "orange"
+    }
+]

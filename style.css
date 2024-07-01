@@ -87,3 +87,9 @@ p {
 .card .front {
   transform: rotateY(180deg);
 }
+
+.notification {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}

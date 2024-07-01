@@ -1,38 +1,38 @@
 [
     {
-        "image": "asset/chili.png",
-        "name": "chili"
+        "image": "asset/mouse.png",
+        "name": "mouse"
     },
     {
-        "image": "asset/grapes.png",
-        "name": "grapes"
+        "image": "asset/monitor.jpg",
+        "name": "monitor"
     },
     {
-        "image": "asset/lemon.png",
-        "name": "lemon"
+        "image": "asset/keyboard.jpg",
+        "name": "keyboard"
     },
     {
-        "image": "asset/orange.png",
-        "name": "orange"
+        "image": "asset/controller.jpg",
+        "name": "controller"
+    },
+	{
+        "image": "asset/pendrive.png",
+        "name": "pendrive"
     },
     {
-        "image": "asset/pineapple.png",
-        "name": "pineapple"
+        "image": "asset/hdd.png",
+        "name": "hdd"
     },
     {
-        "image": "asset/strawberry.png",
-        "name": "strawberry"
+        "image": "asset/motherboard.jpg",
+        "name": "motherboard"
     },
     {
-        "image": "asset/tomato.png",
-        "name": "tomato"
+        "image": "asset/cpu.jpg",
+        "name": "cpu"
     },
     {
-        "image": "asset/watermelon.png",
-        "name": "watermelon"
-    },
-    {
-        "image": "asset/cherries.png",
-        "name": "cherries"
+        "image": "asset/gpu.jpg",
+        "name": "gpu"
     }
 ]

@@ -87,4 +87,10 @@ p {
 .actions .return {
   background-color: #e74c3c;
 }
+
+.notification {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
 }

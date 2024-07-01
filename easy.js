@@ -65,7 +65,17 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
-  isMatch ? disableCards() : unflipCards();
+if (isMatch) {
+    disableCards();
+    matchedPairs++;
+    if (matchedPairs === totalPairs) {
+      setTimeout(() => {
+        alert("Congratulations! You've matched all the cards.");
+      }, 500);
+    }
+  } else {
+    unflipCards();
+  }
 }
 
 function disableCards() {

@@ -3,10 +3,12 @@ let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
 let score = 0;
+let timer;
+let seconds = 0;
 
-document.querySelector(".score").textContent = score;
+document.getElementById("score").textContent = score;
 
-fetch("data/cards.json")
+fetch("data/cardeasy.json")
   .then((res) => res.json())
   .then((data) => {
     cards = [...data, ...data];
@@ -56,7 +58,7 @@ function flipCard() {
 
   secondCard = this;
   score++;
-  document.querySelector(".score").textContent = score;
+  document.getElementById("score").textContent = score;
   lockBoard = true;
 
   checkForMatch();
@@ -73,6 +75,7 @@ function disableCards() {
   secondCard.removeEventListener("click", flipCard);
 
   resetBoard();
+  checkIfGameWon();
 }
 
 function unflipCards() {
@@ -93,7 +96,42 @@ function restart() {
   resetBoard();
   shuffleCards();
   score = 0;
-  document.querySelector(".score").textContent = score;
+  document.getElementById("score").textContent = score;
   gridContainer.innerHTML = "";
   generateCards();
+  resetTimer();
+  startTimer();
 }
+
+function startTimer() {
+  timer = setInterval(() => {
+    seconds++;
+    document.getElementById("timer").textContent = seconds;
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timer);
+}
+
+function resetTimer() {
+  stopTimer();
+  seconds = 0;
+  document.getElementById("timer").textContent = seconds;
+}
+
+function checkIfGameWon() {
+  const allCardsMatched = document.querySelectorAll(".card.flipped").length === cards.length;
+  if (allCardsMatched) {
+    stopTimer();
+    alert(`You won! Time taken: ${seconds} seconds`);
+  }
+}
+
+gridContainer.addEventListener("click", () => {
+  resetBoard();
+  shuffleCards();
+  generateCards();
+  resetTimer();
+  startTimer();
+}, { once: true });

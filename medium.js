@@ -8,7 +8,7 @@ let seconds = 0;
 
 document.getElementById("score").textContent = score;
 
-fetch("data/cardeasy.json")
+fetch("data/cardmedium.json")
   .then((res) => res.json())
   .then((data) => {
     cards = [...data, ...data];

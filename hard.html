@@ -3,18 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Memory Card Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="hard.css">
   </head>
   <body>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	
+  <!-- Background & animion & navbar & title -->
+  <div class="container-fluid">
+<!-- Background animtion-->
+    <div class="background">
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+       <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+<!-- header -->
+   <header>
     <h1>Memory Cards</h1>
     <div class="grid-container">
     </div>
     
     <p>Score: <span class="score"></span></p>
+	<section class="header-content">
     <div class="actions">
         <button onclick="restart()">Restart</button>
         <button class="return" onclick="location.href='chooselevel.html'">Return</button>
-    </div>
+		</div>
+   </section>
+	</header>
     <script>
       window.onload = function() {
         alert("Try matching all the cards, Good Luck");

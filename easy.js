@@ -128,4 +128,10 @@ function checkIfGameWon() {
   }
 }
 
-gridContainer.addEventListener("click", startGame, { once: true });
+gridContainer.addEventListener("click", () => {
+  resetBoard();
+  shuffleCards();
+  generateCards();
+  resetTimer();
+  startTimer();
+}, { once: true });
